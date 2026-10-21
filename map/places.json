@@ -1,0 +1,386 @@
+{
+ "categories": {
+  "venue": {
+   "label": "Venue",
+   "color": "#a8482a"
+  },
+  "ferry": {
+   "label": "Ferry",
+   "color": "#5d7b94"
+  },
+  "hotels": {
+   "label": "Hotels",
+   "color": "#b8955a"
+  },
+  "sights": {
+   "label": "Sights",
+   "color": "#4a5c3a"
+  },
+  "transport": {
+   "label": "Transport",
+   "color": "#6b5a4a"
+  }
+ },
+ "places": [
+  {
+   "id": "villarue",
+   "category": "venue",
+   "name": "VILLArue 1891",
+   "lat": 49.97779,
+   "lng": 7.91976,
+   "blurb": "Our celebration venue: a historic villa on the Rhine with a terrace overlooking the vineyards. Rheinstraße 5, 65385 Rüdesheim am Rhein.",
+   "rating": null,
+   "url": "https://www.villa-rue.de/"
+  },
+  {
+   "id": "kd-pier-mainz-rheinufer-near-fischtor-ra",
+   "category": "ferry",
+   "name": "KD pier Mainz (Rheinufer, near Fischtor/Rathaus)",
+   "lat": 50.00382,
+   "lng": 8.27585,
+   "blurb": "KD Köln-Düsseldorfer scheduled boat to Rüdesheim. 2026 high season (25 Apr–4 Oct, daily except Mon): dep 09:15 → Biebrich 09:30 → Eltville 10:00 → Rüdesheim 11:00 (1h45). Return Rüdesheim 16:20 → Mainz 18:40. Approx €28 single / €31 return (2026 zone G). 2027 timetable not yet published. Times are from the 2026 timetable; 2027 TBC.",
+   "rating": null,
+   "url": "https://www.k-d.com/produkt/linienfahrten-auf-dem-rhein/"
+  },
+  {
+   "id": "kd-pier-wiesbaden-biebrich-schloss-biebr",
+   "category": "ferry",
+   "name": "KD pier Wiesbaden-Biebrich (Schloss Biebrich)",
+   "lat": 50.03653,
+   "lng": 8.23509,
+   "blurb": "KD stop opposite Biebrich Palace. 2026: dep 09:30 → Rüdesheim 11:00 (1h30), daily except Mon; return arrives 18:10. Approx €28/€31. Bus 4/14 from Wiesbaden centre. Times are from the 2026 timetable; 2027 TBC.",
+   "rating": null,
+   "url": "https://www.k-d.com/produkt/linienfahrten-auf-dem-rhein/"
+  },
+  {
+   "id": "kd-bingen-rudesheimer-piers-rudesheim-rh",
+   "category": "ferry",
+   "name": "Rüdesheim boat piers (KD & Bingen-Rüdesheimer)",
+   "lat": 49.97741,
+   "lng": 7.92637,
+   "blurb": "Main passenger piers on Rheinstraße, about 6 min walk from the villa. KD boats from Mainz and Biebrich arrive here at 11:00 (2026 timetable; 2027 TBC). Bingen-Rüdesheimer ticket office at Anleger 8 & 10.",
+   "rating": null,
+   "url": "https://www.bingen-ruedesheimer.de/fahrplan/"
+  },
+  {
+   "id": "car-ferry-bingenrudesheim-rudesheim-side",
+   "category": "transport",
+   "name": "Car ferry Bingen–Rüdesheim (Rüdesheim side, B42)",
+   "lat": 49.9762,
+   "lng": 7.91172,
+   "blurb": "Bingen-Rüdesheimer car ferry, daily all year. Summer (1 Apr–31 Oct 2026) continuous service 05:30 (Bingen)/05:40 (Rüdesheim) until 23:50/24:00. Foot passenger €2.70, car ≤3t €5.90 (+ energy surcharge since 21 Apr 2026). Not affected by low water.",
+   "rating": null,
+   "url": "https://www.bingen-ruedesheimer.de/rheinfaehren/autofaehre/"
+  },
+  {
+   "id": "car-ferry-bingenrudesheim-bingen-side-ha",
+   "category": "transport",
+   "name": "Car ferry Bingen–Rüdesheim (Bingen side, Hafenstraße)",
+   "lat": 49.97054,
+   "lng": 7.91312,
+   "blurb": "Bingen landing of the car ferry; ~10 min walk to Bingen Stadt station.",
+   "rating": null,
+   "url": "https://www.bingen-ruedesheimer.de/rheinfaehren/autofaehre/"
+  },
+  {
+   "id": "passenger-ferry-bingen-brucke-4-5-rheink",
+   "category": "ferry",
+   "name": "Passenger ferry Bingen (Brücke 4/5, Rheinkai)",
+   "lat": 49.97033,
+   "lng": 7.89501,
+   "blurb": "Bingen-Rüdesheimer passenger ferry on excursion boats, 21 Mar–1 Nov 2026; roughly every 1–1.5 h ~10:00–18:20. €2.90 single / €4.90 return. Suspended in low water (e.g. from 19 Sep 2026) – car ferry is the fallback.",
+   "rating": null,
+   "url": "https://www.bingen-ruedesheimer.de/rheinfaehren/personenfaehre/"
+  },
+  {
+   "id": "rudesheim-rhein-station",
+   "category": "transport",
+   "name": "Rüdesheim (Rhein) station",
+   "lat": 49.97713,
+   "lng": 7.91549,
+   "blurb": "RB10 trains Wiesbaden / Frankfurt; 4 min walk to villa.",
+   "rating": null,
+   "url": "https://www.bahn.de/"
+  },
+  {
+   "id": "bingen-rhein-hbf",
+   "category": "transport",
+   "name": "Bingen (Rhein) Hbf",
+   "lat": 49.96881,
+   "lng": 7.88349,
+   "blurb": "Left-bank trains to Mainz, Koblenz; cross via ferry.",
+   "rating": null,
+   "url": "https://www.bahn.de/"
+  },
+  {
+   "id": "breuer-s-rudesheimer-schloss",
+   "category": "hotels",
+   "name": "Breuer's Rüdesheimer Schloss",
+   "lat": 49.97846,
+   "lng": 7.92069,
+   "blurb": "4* family wine hotel in a 1729 building off the Drosselgasse; top-rated in town. Price guide: €€€ (~€170–260).",
+   "rating": "Tripadvisor 4.5/5 (452), #1 of 28 (as of Oct 2026)",
+   "url": "https://www.ruedesheimer-schloss.com/"
+  },
+  {
+   "id": "hotel-trapp",
+   "category": "hotels",
+   "name": "Hotel Trapp",
+   "lat": 49.97939,
+   "lng": 7.92483,
+   "blurb": "Family-run, central near the Drosselgasse; strong reviews. Price guide: €€ (~€110–170).",
+   "rating": "Tripadvisor 4.4/5 (166) (as of Oct 2026)",
+   "url": "https://www.hotel-trapp.de/"
+  },
+  {
+   "id": "rudesheimer-hof",
+   "category": "hotels",
+   "name": "Rüdesheimer Hof",
+   "lat": 49.97919,
+   "lng": 7.92632,
+   "blurb": "Traditional hotel with wine terrace at the edge of the old town. Price guide: €€ (~€100–160).",
+   "rating": "Tripadvisor 4.3/5 (228) (as of Oct 2026)",
+   "url": "https://www.ruedesheimer-hof.de/"
+  },
+  {
+   "id": "ringhotel-central-superior",
+   "category": "hotels",
+   "name": "Ringhotel Central Superior",
+   "lat": 49.9791,
+   "lng": 7.92451,
+   "blurb": "4* superior, Kirchstraße, quiet but central; pool/spa. Price guide: €€ (~€130–190).",
+   "rating": "trivago 8.6/10 (1,952) (as of Oct 2026)",
+   "url": "https://www.centralhotel.net/"
+  },
+  {
+   "id": "hotel-lindenwirt",
+   "category": "hotels",
+   "name": "Hotel Lindenwirt",
+   "lat": 49.9788,
+   "lng": 7.92086,
+   "blurb": "Wine-tavern hotel (incl. wine-barrel rooms) on the Drosselgasse; lively. Price guide: €€ (~€100–150).",
+   "rating": "Tripadvisor 3.8/5 (293) (as of Oct 2026)",
+   "url": "https://www.lindenwirt.com/"
+  },
+  {
+   "id": "parkhotel-rudesheim",
+   "category": "hotels",
+   "name": "Parkhotel Rüdesheim",
+   "lat": 49.97785,
+   "lng": 7.92324,
+   "blurb": "Large riverside hotel on Rheinstraße – closest big room block to the villa. Price guide: €€ (~€100–160).",
+   "rating": "Tripadvisor 3.3/5 (229) (as of Oct 2026)",
+   "url": "https://www.parkhotel-ruedesheim.de/"
+  },
+  {
+   "id": "hotel-rheinstein",
+   "category": "hotels",
+   "name": "Hotel Rheinstein",
+   "lat": 49.97781,
+   "lng": 7.92278,
+   "blurb": "Riverfront hotel on Rheinstraße, steps from the villa. Price guide: €€ (est.).",
+   "rating": null,
+   "url": "https://www.hotel-rheinstein.de/"
+  },
+  {
+   "id": "rheinhotel-rudesheim",
+   "category": "hotels",
+   "name": "Rheinhotel Rüdesheim",
+   "lat": 49.9796,
+   "lng": 7.93003,
+   "blurb": "4* hotel with rooftop pool and Rhine views, east end of town. Price guide: €€–€€€ (est.).",
+   "rating": "trivago 7.1/10 (as of Oct 2026)",
+   "url": "https://www.rheinhotel-ruedesheim.de/"
+  },
+  {
+   "id": "hotel-jagdschloss-niederwald",
+   "category": "hotels",
+   "name": "Hotel Jagdschloss Niederwald",
+   "lat": 49.98568,
+   "lng": 7.88252,
+   "blurb": "Former hunting lodge in the forest above town; quiet, scenic, needs car/taxi or chairlift+walk. Price guide: €€–€€€.",
+   "rating": "Tripadvisor 3.7/5 (~190) (as of Oct 2026)",
+   "url": "https://www.jagdschloss-niederwald.de/"
+  },
+  {
+   "id": "hotel-krone-assmannshausen",
+   "category": "hotels",
+   "name": "Hotel Krone Assmannshausen",
+   "lat": 49.98821,
+   "lng": 7.86522,
+   "blurb": "Historic 1541 riverside hotel with pool in Assmannshausen; 1 train stop / boat from Rüdesheim. Price guide: €€–€€€.",
+   "rating": "Tripadvisor 3.4/5 (230) (as of Oct 2026)",
+   "url": "https://www.hotel-krone.com/"
+  },
+  {
+   "id": "nh-bingen",
+   "category": "hotels",
+   "name": "NH Bingen",
+   "lat": 49.96951,
+   "lng": 7.89114,
+   "blurb": "Modern chain hotel on Bingen riverfront across the Rhine; good for larger blocks; ferry to Rüdesheim (last car ferry ~23:50). Price guide: €€ (est.).",
+   "rating": null,
+   "url": "https://www.nh-hotels.de/hotel/nh-bingen"
+  },
+  {
+   "id": "niederwald-monument-niederwalddenkmal",
+   "category": "sights",
+   "name": "Niederwald Monument (Niederwalddenkmal)",
+   "lat": 49.9811,
+   "lng": 7.89976,
+   "blurb": "1883 Germania monument high above the vineyards; huge Rhine views.",
+   "rating": null,
+   "url": "https://www.seilbahn-ruedesheim.de/"
+  },
+  {
+   "id": "rudesheim-cable-car-seilbahn-base-statio",
+   "category": "sights",
+   "name": "Rüdesheim cable car (Seilbahn) base station",
+   "lat": 49.97961,
+   "lng": 7.92192,
+   "blurb": "Gondola over the vineyards to the Niederwald Monument; combo \"Ring ticket\" with chairlift + boat.",
+   "rating": null,
+   "url": "https://www.seilbahn-ruedesheim.de/"
+  },
+  {
+   "id": "drosselgasse",
+   "category": "sights",
+   "name": "Drosselgasse",
+   "lat": 49.97835,
+   "lng": 7.9208,
+   "blurb": "144 m alley of wine taverns with live music – Rüdesheim's classic evening stroll.",
+   "rating": null,
+   "url": "https://www.drosselgasse.de/"
+  },
+  {
+   "id": "siegfried-s-mechanical-music-cabinet",
+   "category": "sights",
+   "name": "Siegfried's Mechanical Music Cabinet",
+   "lat": 49.97928,
+   "lng": 7.91993,
+   "blurb": "Museum of self-playing instruments in the Brömserhof, with demonstrations.",
+   "rating": null,
+   "url": "https://www.smmk.de/"
+  },
+  {
+   "id": "bromserburg-rheingau-wine-museum",
+   "category": "sights",
+   "name": "Brömserburg (Rheingau Wine Museum)",
+   "lat": 49.97766,
+   "lng": 7.91784,
+   "blurb": "One of the Rhine's oldest castles, next door to the villa; home of the wine museum.",
+   "rating": null,
+   "url": "https://www.ruedesheim.de/"
+  },
+  {
+   "id": "ehrenfels-castle-ruins",
+   "category": "sights",
+   "name": "Ehrenfels castle ruins",
+   "lat": 49.97552,
+   "lng": 7.88013,
+   "blurb": "13th-c. ruin on the Rüdesheimer Berg vineyards; reachable on the vineyard hiking trails.",
+   "rating": null,
+   "url": "https://www.rheinsteig.de/"
+  },
+  {
+   "id": "abbey-of-st-hildegard-eibingen",
+   "category": "sights",
+   "name": "Abbey of St. Hildegard, Eibingen",
+   "lat": 49.99261,
+   "lng": 7.92764,
+   "blurb": "Benedictine abbey founded by Hildegard von Bingen tradition; church, shop, nuns' wine.",
+   "rating": null,
+   "url": "https://www.abtei-st-hildegard.de/"
+  },
+  {
+   "id": "assmannshausen-chairlift",
+   "category": "sights",
+   "name": "Assmannshausen chairlift",
+   "lat": 49.98735,
+   "lng": 7.87464,
+   "blurb": "Currently out of service (until further notice, as of Oct 2026). Chairlift from Assmannshausen up to the Niederwald.",
+   "rating": null,
+   "url": "https://www.seilbahn-ruedesheim.de/"
+  },
+  {
+   "id": "jagdschloss-niederwald-rheinsteig-ridge-",
+   "category": "sights",
+   "name": "Jagdschloss Niederwald & Rheinsteig ridge walk",
+   "lat": 49.98568,
+   "lng": 7.88252,
+   "blurb": "Easy forest walk Niederwald Monument → Temple → Rossel ruin → Jagdschloss (Rheinsteig).",
+   "rating": null,
+   "url": "https://www.rheinsteig.de/"
+  },
+  {
+   "id": "kloster-eberbach",
+   "category": "sights",
+   "name": "Kloster Eberbach",
+   "lat": 50.04385,
+   "lng": 8.04619,
+   "blurb": "Cistercian monastery (\"Name of the Rose\" filming), wine estate & tastings; ~20 min by car.",
+   "rating": null,
+   "url": "https://www.kloster-eberbach.de/"
+  },
+  {
+   "id": "weinprobierstand-rudesheim",
+   "category": "sights",
+   "name": "Weinprobierstand Rüdesheim",
+   "lat": 49.97892,
+   "lng": 7.92314,
+   "blurb": "Open-air wine-tasting stand by the market – try local Riesling.",
+   "rating": null,
+   "url": "https://www.ruedesheim.de/"
+  },
+  {
+   "id": "weingut-georg-breuer",
+   "category": "sights",
+   "name": "Weingut Georg Breuer",
+   "lat": 49.97924,
+   "lng": 7.92585,
+   "blurb": "Renowned Riesling estate in the old town; tastings in its vinothek.",
+   "rating": null,
+   "url": "https://www.georg-breuer.com/"
+  },
+  {
+   "id": "asbach-uralt-visitor-centre",
+   "category": "sights",
+   "name": "Asbach Uralt visitor centre",
+   "lat": 49.979,
+   "lng": 7.9255,
+   "blurb": "Home of Asbach brandy and Rüdesheimer Kaffee; shop/tastings. (approx. coordinates)",
+   "rating": null,
+   "url": "https://www.asbach.de/"
+  },
+  {
+   "id": "mauseturm-mouse-tower-bingen",
+   "category": "sights",
+   "name": "Mäuseturm (Mouse Tower), Bingen",
+   "lat": 49.97205,
+   "lng": 7.8804,
+   "blurb": "Legendary toll tower on a Rhine island at the Binger Loch; best seen from the boat or Bingen bank.",
+   "rating": null,
+   "url": "https://www.bingen.de/"
+  },
+  {
+   "id": "burg-rheinstein",
+   "category": "sights",
+   "name": "Burg Rheinstein",
+   "lat": 49.99357,
+   "lng": 7.85853,
+   "blurb": "Romantic castle above Trechtingshausen; boat stop with own pier.",
+   "rating": null,
+   "url": "https://www.burg-rheinstein.de/"
+  },
+  {
+   "id": "bingen-kulturufer-museum-am-strom",
+   "category": "sights",
+   "name": "Bingen Kulturufer & Museum am Strom",
+   "lat": 49.97018,
+   "lng": 7.89482,
+   "blurb": "Riverside park promenade; Hildegard of Bingen exhibition.",
+   "rating": null,
+   "url": "https://www.bingen.de/"
+  }
+ ]
+}
