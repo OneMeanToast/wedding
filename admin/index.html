@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../app.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="../sb-config.js"></script><title>Guest admin · Oona &amp; Wes</title></head><body>
+<header class="nav"><a class="brand" href="../">O <span>&amp;</span> W</a><nav id="links"><a href="#" id="out" class="hide">Sign out</a></nav></header>
+<main class="page wide">
+<h2 style="text-align:center">Guest admin</h2><div class="rule"></div>
+<div id="login" class="panel hide" style="max-width:420px;margin:1rem auto"><h3>Sign in</h3><p class="small">Admins only. We'll email you a magic link.</p>
+<input id="em" type="email" placeholder="you@gmail.com"><p class="tools"><button class="btn" id="ml">Email me a link</button><button class="btn" id="gg">Sign in with Google</button></p><div id="lmsg" class="small"></div></div>
+<div id="denied" class="panel msg err hide">This account isn't on the admin list.</div>
+<div id="app" class="hide">
+<div class="stats" id="stats"></div>
+<div class="panel"><h3>Guests</h3>
+<div class="tools"><input id="q" placeholder="Search name, household, notes…"><select id="fs"><option value="">All RSVP</option><option>pending</option><option>yes</option><option>no</option><option>maybe</option></select><select id="fc"><option value="">All countries</option></select><select id="ff"><option value="">All</option><option value="ph">Placeholders</option><option value="child">Children</option><option value="diet">Diet/allergy</option></select></div>
+<div class="tools"><button class="btn sm" id="addh">+ Household</button><button class="btn sm" id="csv">Export CSV</button></div>
+<div class="tablewrap"><table><thead><tr><th>Household</th><th>Name</th><th>RSVP</th><th>Country</th><th>Diet</th><th>Allergies</th><th>Arrive</th><th>Depart</th><th>Travel</th><th>Hotel</th><th>Notes</th><th></th></tr></thead><tbody id="tb"></tbody></table></div>
+<p class="small">Click a cell to edit; changes save when you leave the cell.</p></div>
+<div class="row"><div class="panel"><h3>Allergies &amp; diets</h3><div id="sumd"></div></div><div class="panel"><h3>Travel</h3><div id="sumt"></div></div></div>
+<div class="panel"><h3>Messages</h3><div id="msgs"></div></div>
+</div></main><script src="admin.js"></script></body></html>

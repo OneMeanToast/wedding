@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../app.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="../sb-config.js"></script><title>RSVP · Oona &amp; Wes</title><meta name="robots" content="noindex"></head><body>
+<header class="nav"><a class="brand" href="../">O <span>&amp;</span> W</a></header>
+<main class="page">
+<h2 style="text-align:center">RSVP</h2><div class="rule"></div>
+<p class="lead" style="text-align:center">Saturday, 24 July 2027 · VILLArue 1891, Rüdesheim am Rhein</p>
+<div id="status" class="msg">Loading your invitation…</div>
+<form id="f" class="hide">
+<h3 id="hh" style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:2rem"></h3>
+<div id="people"></div>
+<div class="panel"><h3>Travel</h3><div class="row">
+<div><label>Arrival date</label><input type="date" id="arr" min="2027-07-18" max="2027-07-31"></div>
+<div><label>Departure date</label><input type="date" id="dep" min="2027-07-18" max="2027-08-05"></div>
+<div><label>How are you travelling?</label><select id="mode"><option value="">Choose…</option><option>Flying into Frankfurt (FRA)</option><option>Train</option><option>Car</option><option>Rhine boat</option><option>Already local</option><option>Not sure yet</option></select></div>
+<div><label>Where are you staying?</label><input id="hotel" placeholder="Hotel / town, if known"></div>
+<div><label>Would local transport help (e.g. station ↔ venue)?</label><select id="tr"><option value="">Not sure</option><option value="true">Yes, please</option><option value="false">No, we're fine</option></select></div>
+<div><label>A song that will get you dancing</label><input id="song" maxlength="200"></div>
+</div><label>A note for us (optional)</label><textarea id="note" maxlength="2000"></textarea></div>
+<p style="text-align:center"><button class="btn" type="submit">Send RSVP</button></p>
+</form>
+<div id="done" class="panel hide" style="text-align:center"><h3>Thank you!</h3><p id="donemsg"></p><p class="small">Need to change something? Use the same link any time before the RSVP deadline (details coming soon).</p><p><a class="btn" href="../">Back to the website</a></p></div>
+</main>
+<script src="rsvp.js"></script></body></html>
