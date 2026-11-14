@@ -21,13 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:oona-wes-wedding-20270724@onemeantoast.github.io
+UID:oona-wes-wedding-20270724@wesandoona.wedding
 DTSTAMP:20261021T193500Z
 DTSTART;TZID=Europe/Berlin:20270724T140000
 DTEND;TZID=Europe/Berlin:20270725T030000
 SUMMARY:Oona & Wes — Wedding
 LOCATION:VILLArue 1891\, Rheinstraße 5\, 65385 Rüdesheim am Rhein\, Germany
-DESCRIPTION:Details: https://onemeantoast.github.io/wedding/
-URL:https://onemeantoast.github.io/wedding/
+DESCRIPTION:Details: https://wesandoona.wedding/
+URL:https://wesandoona.wedding/
 END:VEVENT
 END:VCALENDAR
