@@ -3,20 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>/* Pick the language before first paint: ?lang= > saved choice > English */(function(){var l;try{l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('lang')}catch(e){}document.documentElement.lang=(l==='fi')?'fi':'en'})();</script>
 <title>Oona &amp; Wes · 24 July 2027 · Rüdesheim am Rhein</title>
-<meta name="description" content="Wedding celebration of Oona & Wes, Saturday 24 July 2027, VILLArue 1891, Rüdesheim am Rhein, Germany.">
+<meta name="description" content="Wedding celebration of Oona &amp; Wes, Saturday 24 July 2027, VILLArue 1891, Rüdesheim am Rhein, Germany.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 <link rel="icon" href="img/floral-tl.webp?v=2">
 </head>
 <body>
 <header class="nav">
   <a class="brand" href="#home">O <span>&amp;</span> W</a>
-  <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
+  <div class="nav-tools">
+    <div class="lang-switch" role="group" aria-label="Language / Kieli">
+      <button type="button" data-set-lang="en" aria-pressed="true" title="English">EN</button><button type="button" data-set-lang="fi" aria-pressed="false" title="Suomeksi">FI</button>
+    </div>
+    <button class="menu" aria-expanded="false" aria-controls="links"><span lang="en">Menu</span><span lang="fi">Valikko</span></button>
+  </div>
   <nav id="links">
-    <a href="#story">Our Story</a><a href="#schedule">Schedule</a><a href="#venue">Venue</a><a href="#stay">Stay</a><a href="#travel">Travel</a><a href="#map">Map</a><a href="#faq">FAQ</a><a href="#updates">Updates</a><a href="#rsvp" class="pill">RSVP</a>
+    <a href="#story"><span lang="en">Our Story</span><span lang="fi">Tarinamme</span></a><a href="#schedule"><span lang="en">Schedule</span><span lang="fi">Aikataulu</span></a><a href="#venue"><span lang="en">Venue</span><span lang="fi">Juhlapaikka</span></a><a href="#stay"><span lang="en">Stay</span><span lang="fi">Majoitus</span></a><a href="#travel"><span lang="en">Travel</span><span lang="fi">Matkavinkit</span></a><a href="#faq"><span lang="en">FAQ</span><span lang="fi">Kysyttyä</span></a><a href="#updates"><span lang="en">Updates</span><span lang="fi">Ajankohtaista</span></a><a href="#rsvp" class="pill"><span lang="en">RSVP</span><span lang="fi">Ilmoittaudu</span></a>
   </nav>
 </header>
 
@@ -26,171 +31,197 @@
   <img class="fl fl-br" src="img/floral-br.webp?v=2" alt="" aria-hidden="true">
   <div class="hero-inner arch">
     <div class="monogram" aria-hidden="true">O<em>&amp;</em>W</div>
-    <p class="eyebrow">Together with their loved ones</p>
+    <p class="eyebrow"><span lang="en">Together with their loved ones</span><span lang="fi">Yhdessä rakkaidensa kanssa</span></p>
     <h1>Oona <em>&amp;</em> Wes</h1>
     <div class="rule"></div>
-    <p class="date">Saturday, 24 July 2027</p>
-    <p class="place">VILLArue 1891 · Rüdesheim am Rhein, Germany</p>
-    <div class="countdown" id="countdown" aria-live="polite">
-      <div><b data-k="d">–</b><span>days</span></div>
-      <div><b data-k="h">–</b><span>hours</span></div>
-      <div><b data-k="m">–</b><span>minutes</span></div>
-      <div><b data-k="s">–</b><span>seconds</span></div>
+    <p class="date"><span lang="en">Saturday, 24 July 2027</span><span lang="fi">Lauantaina 24.7.2027</span></p>
+    <p class="place">VILLArue 1891 · Rüdesheim am Rhein, <span lang="en">Germany</span><span lang="fi">Saksa</span></p>
+    <div class="countdown" id="countdown" aria-live="off">
+      <div><b data-k="d">–</b><span><span lang="en">days</span><span lang="fi">päivää</span></span></div>
+      <div><b data-k="h">–</b><span><span lang="en">hours</span><span lang="fi">tuntia</span></span></div>
+      <div><b data-k="m">–</b><span><span lang="en">minutes</span><span lang="fi">minuuttia</span></span></div>
+      <div><b data-k="s">–</b><span><span lang="en">seconds</span><span lang="fi">sekuntia</span></span></div>
     </div>
-    <a class="btn" href="#schedule">See the plan</a>
-    <a class="btn ghost" href="oona-wes-24-july-2027.ics" download>Add to calendar</a>
+    <a class="btn" href="#schedule"><span lang="en">See the plan</span><span lang="fi">Katso aikataulu</span></a>
+    <a class="btn ghost" href="oona-wes-24-july-2027.ics" download><span lang="en">Add to calendar</span><span lang="fi">Lisää kalenteriin</span></a>
   </div>
 </section>
 
-
-<section class="film" aria-label="VILLArue 1891 on the Rhine">
+<section class="film" aria-label="VILLArue 1891" >
   <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero.mp4" type="video/mp4"></video>
-  <div class="film-cap"><p class="eyebrow">Our celebration venue</p><p class="film-title">VILLArue 1891 · on the Rhine</p></div>
-  <small class="credit">Photos &amp; video courtesy of VILLArue 1891</small>
+  <div class="film-cap"><p class="eyebrow"><span lang="en">Our celebration venue</span><span lang="fi">Juhlapaikkamme</span></p><p class="film-title">VILLArue 1891 · <span lang="en">on the Rhine</span><span lang="fi">Reinin rannalla</span></p></div>
+  <small class="credit"><span lang="en">Photos &amp; video courtesy of VILLArue 1891</span><span lang="fi">Kuvat ja video: VILLArue 1891</span></small>
 </section>
 
 <section id="story" class="wrap">
-  <h2>Our Story</h2>
+  <h2><span lang="en">Our Story</span><span lang="fi">Tarinamme</span></h2>
   <div class="rule"></div>
-  <p class="lead">A Finn and an American who found home in each other, and now in the Rhine valley, a short drive from where we live.</p>
-  <p>We made it official in a quiet ceremony at <strong>Copenhagen City Hall on 1 September 2026</strong>. Just the two of us and a lot of happiness. But a wedding isn't complete without the people we love. So <strong>24 July 2027 is the big celebration</strong>: a ceremony on the Rhine, then dinner, cake and dancing late into the night with family and friends from the US, Finland and Germany.</p>
-  <p>We can't wait to celebrate with you.</p>
+  <div lang="en">
+    <p class="lead">A Finn and an American who found home in each other in Germany, and who now want to celebrate it with our loved ones in the Rhine Valley, a short drive from where we live.</p>
+    <p>We made it official in a quiet ceremony at <strong>Copenhagen City Hall on 1 September 2026</strong>. As we welcome our baby girl in February 2027, we want to invite our loved ones to a big celebration on <strong>24 July 2027</strong>, with a ceremony, dinner, cake and lots of dancing and celebrating into the night. For all our friends and family from the US, Finland and Germany.</p>
+    <p>We can't wait to celebrate with you!</p>
+  </div>
+  <div lang="fi">
+    <p class="lead">Suomalainen ja amerikkalainen, jotka löysivät kodin toisistaan Saksassa. Nyt haluamme juhlia sitä yhdessä rakkaidemme kanssa Reininlaaksossa, vain lyhyen ajomatkan päässä kotoamme.</p>
+    <p>Sanoimme tahdon kaikessa hiljaisuudessa <strong>Kööpenhaminan kaupungintalolla 1. syyskuuta 2026</strong>. Perheemme kasvaa helmikuussa 2027, kun tyttövauvamme syntyy, ja kesällä haluamme kutsua rakkaimpamme suureen juhlaan <strong>24. heinäkuuta 2027</strong>. Luvassa on seremonia, illallinen, kakkua sekä paljon tanssia ja juhlintaa pitkälle yöhön – kaikille ystävillemme ja perheellemme Yhdysvalloista, Suomesta ja Saksasta.</p>
+    <p>Emme malta odottaa, että pääsemme juhlimaan kanssanne!</p>
+  </div>
 </section>
 
 <section id="schedule" class="wrap alt">
-  <h2>Schedule</h2>
+  <h2><span lang="en">The Wedding Day</span><span lang="fi">Hääpäivän aikataulu</span></h2>
   <div class="rule"></div>
-  <p class="tbc">Draft plan. Times to be confirmed.</p>
+  <p class="lead small"><span lang="en">Saturday, 24 July 2027</span><span lang="fi">Lauantai 24.7.2027</span></p>
   <ol class="timeline">
-    <li><time>14:00</time><div><h3>Ceremony on the Rhine</h3><p>Our ceremony takes place aboard a ferry on the river. Boarding point and time: <span class="soon">Details coming soon</span></p></div></li>
-    <li><time>16:00</time><div><h3>Welcome drinks</h3><p>Arrival at VILLArue 1891. Drinks and cocktail bites on the terrace overlooking the vineyards.</p></div></li>
-    <li><time>18:00</time><div><h3>Dinner</h3><p>Italian buffet by L'Opera Hofheim. <span class="soon">Menu coming soon</span></p></div></li>
-    <li><time>21:00</time><div><h3>Cake &amp; dessert</h3><p>As the sun sets and the terrace torches are lit.</p></div></li>
-    <li><time>23:00</time><div><h3>Dancing</h3><p>The villa turns into a dance floor.</p></div></li>
-    <li><time>03:00</time><div><h3>Last dance</h3><p>Party ends. Getting home: <span class="soon">Details coming soon</span></p></div></li>
+    <li><time>14:00</time><div><h3><span lang="en">Ceremony</span><span lang="fi">Seremonia</span></h3>
+      <p lang="en">The ceremony will take place near VILLArue, and we'll share the details soon. We'll all <strong>meet at 14:00 at the VILLArue venue</strong>.</p>
+      <p lang="fi">Seremonia pidetään VILLArue-huvilan lähellä, ja kerromme tarkemmat tiedot myöhemmin. Kokoonnumme kaikki <strong>klo 14.00 VILLArue-juhlapaikalle</strong>.</p></div></li>
+    <li><time>16:00</time><div><h3><span lang="en">Cocktail Hour</span><span lang="fi">Cocktail-tilaisuus</span></h3>
+      <p lang="en">Drinks and bites on the villa's terrace.</p>
+      <p lang="fi">Juomia ja pientä purtavaa huvilan terassilla.</p></div></li>
+    <li><time>18:00</time><div><h3><span lang="en">Dinner</span><span lang="fi">Illallinen</span></h3>
+      <p lang="en">A traditional Mediterranean buffet.</p>
+      <p lang="fi">Perinteinen välimerellinen noutopöytä.</p></div></li>
+    <li><time>22:00</time><div><h3><span lang="en">Dancing and Celebration</span><span lang="fi">Tanssia ja jatkot</span></h3>
+      <p lang="en">Music, dancing and celebrating into the night.</p>
+      <p lang="fi">Musiikkia, tanssia ja juhlintaa pitkälle yöhön.</p></div></li>
+    <li><time>03:00</time><div><h3><span lang="en">Party ends</span><span lang="fi">Juhlat päättyvät</span></h3>
+      <p lang="en">Please plan your trip home in advance. See <a href="#faq-home">How will I get home?</a></p>
+      <p lang="fi">Suunnittelettehan kotimatkan etukäteen. Katso <a href="#faq-home">Miten pääsen juhlista kotiin?</a></p></div></li>
   </ol>
-  <p class="note">Planning a welcome get-together on Friday or a farewell brunch on Sunday? If we host one, you'll find it under <a href="#updates">Updates</a>.</p>
+  <p class="note" lang="en">Planning a welcome get-together on Friday or a farewell brunch on Sunday? If we host one, you'll find it under <a href="#updates">Updates</a>.</p>
+  <p class="note" lang="fi">Mietimme vielä, järjestämmekö perjantaina tervetuliaistapaamisen tai sunnuntaina läksiäisbrunssin. Jos järjestämme, löydätte tiedot <a href="#updates">Ajankohtaista</a>-osiosta.</p>
 </section>
 
 <section id="venue" class="wrap">
-  <h2>Venue &amp; Getting There</h2>
+  <h2><span lang="en">Venue &amp; Getting There</span><span lang="fi">Juhlapaikka ja saapuminen</span></h2>
   <div class="rule"></div>
   <div class="grid2">
     <div>
       <h3>VILLArue 1891</h3>
-      <p>Rheinstraße 5<br>65385 Rüdesheim am Rhein<br>Germany</p>
-      <p>A historic villa right on the Rhine, with a terrace looking out over the vineyards and the Niederwald Monument.</p>
-      <p><a class="btn small" href="https://www.google.com/maps/search/?api=1&query=49.97779%2C7.91976" target="_blank" rel="noopener">Open in Google Maps</a>
-      <a class="btn small ghost" href="https://www.villa-rue.de" target="_blank" rel="noopener">Venue website</a></p>
+      <p>Rheinstraße 5<br>65385 Rüdesheim am Rhein<br><span lang="en">Germany</span><span lang="fi">Saksa</span></p>
+      <p lang="en">We look forward to celebrating with you in the beautiful town of Rüdesheim am Rhein, nestled along the Rhine River and surrounded by picturesque vineyards. Rüdesheim is the southern gateway to the UNESCO World Heritage-listed Upper Middle Rhine Valley, recognised for its breathtaking landscapes, historic castles, charming old towns and centuries-old wine culture.</p>
+      <p lang="fi">Hääjuhlaamme vietetään viehättävässä Rüdesheim am Rheinin kaupungissa, keskellä Reininlaakson upeita maisemia ja viinitarhoja. Rüdesheim sijaitsee Unescon maailmanperintökohteeksi nimetyn Ylä-Reinin keskilaakson eteläosassa. Alue tunnetaan erityisesti historiallisista linnoistaan, idyllisistä jokivarsimaisemistaan ja pitkistä viininviljelyperinteistään.</p>
+      <p><a class="btn small" href="https://www.google.com/maps/search/?api=1&amp;query=49.97779%2C7.91976" target="_blank" rel="noopener"><span lang="en">Open in Google Maps</span><span lang="fi">Avaa Google Mapsissa</span></a>
+      <a class="btn small ghost" href="https://www.villa-rue.de" target="_blank" rel="noopener"><span lang="en">Venue website</span><span lang="fi">Juhlapaikan sivut</span></a></p>
     </div>
-    <figure class="arch-photo"><img src="media/exterior-sm.webp" alt="VILLArue 1891 seen from the Rhine promenade" loading="lazy" width="800" height="533"><figcaption><a href="#map">View on the map ↓</a></figcaption></figure>
+    <figure class="arch-photo"><img src="media/exterior-sm.webp" alt="VILLArue 1891" data-alt-en="VILLArue 1891 seen from the Rhine promenade" data-alt-fi="VILLArue 1891 Reinin rantakadulta nähtynä" loading="lazy" width="800" height="533"></figure>
   </div>
 
   <div class="gallery">
-    <a href="media/terrace.webp" target="_blank" rel="noopener"><img src="media/terrace-sm.webp" alt="The terrace" loading="lazy" width="800" height="533"></a>
-    <a href="media/rhine-view.webp" target="_blank" rel="noopener"><img src="media/rhine-view-sm.webp" alt="Views across the Rhine valley" loading="lazy" width="800" height="533"></a>
-    <a href="media/exterior.webp" target="_blank" rel="noopener"><img src="media/exterior-sm.webp" alt="The villa" loading="lazy" width="800" height="533"></a>
-    <a href="media/garden-entrance.webp" target="_blank" rel="noopener"><img src="media/garden-entrance-sm.webp" alt="Garden entrance" loading="lazy" width="800" height="533"></a>
-    <a href="media/festsaal-dinner.webp" target="_blank" rel="noopener"><img src="media/festsaal-dinner-sm.webp" alt="Festsaal, set for dinner" loading="lazy" width="800" height="533"></a>
-    <a href="media/ceremony-hall.webp" target="_blank" rel="noopener"><img src="media/ceremony-hall-sm.webp" alt="Festsaal" loading="lazy" width="800" height="533"></a>
-    <a href="media/stair-hall.webp" target="_blank" rel="noopener"><img src="media/stair-hall-sm.webp" alt="Stair hall" loading="lazy" width="800" height="533"></a>
-    <a href="media/salon.webp" target="_blank" rel="noopener"><img src="media/salon-sm.webp" alt="Wood-panelled salon" loading="lazy" width="800" height="533"></a>
-    <a href="media/table-setting.webp" target="_blank" rel="noopener"><img src="media/table-setting-sm.webp" alt="Wedding table" loading="lazy" width="800" height="533"></a>
-    <a href="media/flowers-tower.webp" target="_blank" rel="noopener"><img src="media/flowers-tower-sm.webp" alt="Summer flowers" loading="lazy" width="800" height="533"></a>
+    <a href="media/terrace.webp" target="_blank" rel="noopener"><img src="media/terrace-sm.webp" alt="" data-alt-en="The terrace" data-alt-fi="Terassi" loading="lazy" width="800" height="533"></a>
+    <a href="media/rhine-view.webp" target="_blank" rel="noopener"><img src="media/rhine-view-sm.webp" alt="" data-alt-en="Views across the Rhine valley" data-alt-fi="Näkymä Reininlaaksoon" loading="lazy" width="800" height="533"></a>
+    <a href="media/exterior.webp" target="_blank" rel="noopener"><img src="media/exterior-sm.webp" alt="" data-alt-en="The villa" data-alt-fi="Huvila" loading="lazy" width="800" height="533"></a>
+    <a href="media/garden-entrance.webp" target="_blank" rel="noopener"><img src="media/garden-entrance-sm.webp" alt="" data-alt-en="Garden entrance" data-alt-fi="Puutarhan sisäänkäynti" loading="lazy" width="800" height="533"></a>
+    <a href="media/festsaal-dinner.webp" target="_blank" rel="noopener"><img src="media/festsaal-dinner-sm.webp" alt="" data-alt-en="Festsaal, set for dinner" data-alt-fi="Juhlasali illallisasussa" loading="lazy" width="800" height="533"></a>
+    <a href="media/ceremony-hall.webp" target="_blank" rel="noopener"><img src="media/ceremony-hall-sm.webp" alt="" data-alt-en="Festsaal" data-alt-fi="Juhlasali" loading="lazy" width="800" height="533"></a>
+    <a href="media/stair-hall.webp" target="_blank" rel="noopener"><img src="media/stair-hall-sm.webp" alt="" data-alt-en="Stair hall" data-alt-fi="Porrashalli" loading="lazy" width="800" height="533"></a>
+    <a href="media/salon.webp" target="_blank" rel="noopener"><img src="media/salon-sm.webp" alt="" data-alt-en="Wood-panelled salon" data-alt-fi="Puupaneloitu salonki" loading="lazy" width="800" height="533"></a>
+    <a href="media/table-setting.webp" target="_blank" rel="noopener"><img src="media/table-setting-sm.webp" alt="" data-alt-en="Wedding table" data-alt-fi="Hääpöytä" loading="lazy" width="800" height="533"></a>
+    <a href="media/flowers-tower.webp" target="_blank" rel="noopener"><img src="media/flowers-tower-sm.webp" alt="" data-alt-en="Summer flowers" data-alt-fi="Kesän kukkia" loading="lazy" width="800" height="533"></a>
   </div>
-  <p class="credit-line">Photos courtesy of VILLArue 1891</p>
-  <div class="cards">
-    <article><h3>✈ From Frankfurt Airport (FRA)</h3><p>FRA is the nearest major airport. By car it's about <strong>1 hour</strong> (≈ 65 km) via Wiesbaden and the B42 along the Rhine. By train, take the <strong>RB10</strong> (usually changing at Frankfurt Hbf or Wiesbaden) to Rüdesheim, roughly 1–1.5 h.</p></article>
-    <article><h3>🚆 RB10 train</h3><p>The <strong>RB10</strong> regional train runs along the Rhine from Frankfurt (≈ 1 h) and Wiesbaden (≈ 30 min) to <strong>Rüdesheim (Rhein)</strong> station, a 4-minute walk from the villa. This is the easiest way to arrive on the wedding day if you're staying in Wiesbaden or Mainz. Times and tickets: <a href="https://www.bahn.de/" target="_blank" rel="noopener">bahn.de</a>.</p></article>
-    <article><h3>⛴ Scenic Friday arrival by boat</h3><p>Arrive the romantic way on <strong>Friday 23 July</strong>: KD Köln-Düsseldorfer boats sail up the Rhine from <strong>Mainz</strong> (dep. 09:15) and <strong>Wiesbaden-Biebrich</strong> (dep. 09:30) to Rüdesheim, arriving 11:00. Fares are about €28 single. There's one sailing a day and it doesn't run on Mondays, so it's a day-before treat, not a wedding-day plan. <em>Times are from the 2026 timetable; 2027 TBC.</em> <a href="https://www.k-d.com/produkt/linienfahrten-auf-dem-rhein/" target="_blank" rel="noopener">k-d.com</a></p></article>
-    <article><h3>🚗 Bingen car ferry</h3><p>Staying in <strong>Bingen</strong>? The Bingen–Rüdesheim car ferry runs daily, continuously from about 05:30 until about <strong>midnight</strong> in summer (2026 times). It costs about €2.70 on foot or €5.90 per car, and it isn't affected by low water. The small passenger ferry runs only during the day. <a href="https://www.bingen-ruedesheimer.de/rheinfaehren/autofaehre/" target="_blank" rel="noopener">Timetable</a></p></article>
-    <article><h3>🅿 Parking &amp; shuttles</h3><p>Parking at the venue and any guest shuttles: <span class="soon">Details coming soon</span></p></article>
+  <p class="credit-line"><span lang="en">Photos courtesy of VILLArue 1891</span><span lang="fi">Kuvat: VILLArue 1891</span></p>
+
+  <h3 class="center"><span lang="en">Getting There</span><span lang="fi">Saapuminen</span></h3>
+  <p class="intro" lang="en">Rüdesheim am Rhein is approximately 60 km from Frankfurt International Airport, around 55 minutes by car. The town can be reached by car, train or ferry.</p>
+  <p class="intro" lang="fi">Rüdesheim am Rhein sijaitsee noin 60 kilometrin päässä Frankfurtin lentokentältä. Matka kestää autolla noin 55 minuuttia. Perille pääsee autolla, junalla tai lautalla.</p>
+  <div class="cards cards3">
+    <article><h3><span lang="en">🚗 By car</span><span lang="fi">🚗 Autolla</span></h3><p lang="en">Parking is available at the venue.</p><p lang="fi">Juhlapaikalla on pysäköintimahdollisuus.</p></article>
+    <article><h3><span lang="en">🚆 By train</span><span lang="fi">🚆 Junalla</span></h3><p lang="en">Rüdesheim (Rhein) train station is only about a 2-minute walk from the venue.</p><p lang="fi">Rüdesheimin (Rhein) rautatieasemalta on juhlapaikalle vain noin kahden minuutin kävelymatka.</p></article>
+    <article><h3><span lang="en">⛴ By boat</span><span lang="fi">⛴ Laivalla</span></h3><p lang="en">The KD (Köln-Düsseldorfer) river boats arrive right in front of the venue.</p><p lang="fi">KD:n (Köln-Düsseldorfer) jokilaivat rantautuvat aivan juhlapaikan eteen.</p></article>
   </div>
 </section>
 
 <section id="stay" class="wrap alt">
-  <h2>Where to Stay</h2>
+  <h2><span lang="en">Where to Stay</span><span lang="fi">Majoitus</span></h2>
   <div class="rule"></div>
-  <p class="tbc">We have no hotel room block at this time. If we arrange one, we'll post it here.</p>
-  <p>July is high season on the Rhine, so <strong>book early</strong>. Look for places with free cancellation.</p>
-  <h3 class="center">Hotels near the villa</h3>
-  <p class="note">Ratings are public review scores as of Oct 2026. Prices are rough guides, not quotes. Every hotel is also on the <a href="#map">map</a>.</p>
+  <p class="tbc"><span lang="en">We have no hotel room block at this time. If we arrange one, we'll post it here.</span><span lang="fi">Meillä ei ole tällä hetkellä varattuna huonekiintiötä. Jos sellainen järjestyy, kerromme siitä täällä.</span></p>
+  <p class="intro" lang="en">July is high season on the Rhine, so <strong>book early</strong>. Look for places with free cancellation. Staying in Rüdesheim makes the evening easiest: the hotels below are within walking distance of the villa.</p>
+  <p class="intro" lang="fi">Heinäkuu on Reinillä sesonkiaikaa, joten <strong>varatkaa majoitus hyvissä ajoin</strong>. Kannattaa suosia paikkoja, joissa on maksuton peruutus. Rüdesheimissa yöpyminen tekee juhlaillasta helpointa: alla olevista hotelleista on kävelymatka huvilalle.</p>
+  <p class="callout"><span lang="en"><strong>Good to know:</strong> air conditioning is not a given in German accommodation. If it matters to you, check before you book.</span><span lang="fi"><strong>Hyvä tietää:</strong> ilmastointi ei ole saksalaisissa majoituksissa itsestäänselvyys. Jos se on teille tärkeää, tarkistakaa asia ennen varausta.</span></p>
+  <h3 class="center"><span lang="en">Hotels near the villa</span><span lang="fi">Hotelleja huvilan lähellä</span></h3>
+  <p class="note"><span lang="en">Ratings are public review scores as of Oct 2026. Prices are rough guides, not quotes.</span><span lang="fi">Arviot ovat julkisia asiakasarvioita (lokakuu 2026). Hinnat ovat suuntaa-antavia, eivät tarjouksia.</span></p>
   <ul class="hotels">
-<li><a href="https://www.ruedesheimer-schloss.com/" target="_blank" rel="noopener">Breuer's Rüdesheimer Schloss</a><span>4* family wine hotel in a 1729 building off the Drosselgasse; top-rated in town. Price guide: €€€ (~€170–260).</span><em>Tripadvisor 4.5/5 (452), #1 of 28 (as of Oct 2026)</em></li>
-<li><a href="https://www.hotel-trapp.de/" target="_blank" rel="noopener">Hotel Trapp</a><span>Family-run, central near the Drosselgasse; strong reviews. Price guide: €€ (~€110–170).</span><em>Tripadvisor 4.4/5 (166) (as of Oct 2026)</em></li>
-<li><a href="https://www.ruedesheimer-hof.de/" target="_blank" rel="noopener">Rüdesheimer Hof</a><span>Traditional hotel with wine terrace at the edge of the old town. Price guide: €€ (~€100–160).</span><em>Tripadvisor 4.3/5 (228) (as of Oct 2026)</em></li>
-<li><a href="https://www.centralhotel.net/" target="_blank" rel="noopener">Ringhotel Central Superior</a><span>4* superior, Kirchstraße, quiet but central; pool/spa. Price guide: €€ (~€130–190).</span><em>trivago 8.6/10 (1,952) (as of Oct 2026)</em></li>
-<li><a href="https://www.lindenwirt.com/" target="_blank" rel="noopener">Hotel Lindenwirt</a><span>Wine-tavern hotel (incl. wine-barrel rooms) on the Drosselgasse; lively. Price guide: €€ (~€100–150).</span><em>Tripadvisor 3.8/5 (293) (as of Oct 2026)</em></li>
-<li><a href="https://www.parkhotel-ruedesheim.de/" target="_blank" rel="noopener">Parkhotel Rüdesheim</a><span>Large riverside hotel on Rheinstraße – closest big room block to the villa. Price guide: €€ (~€100–160).</span><em>Tripadvisor 3.3/5 (229) (as of Oct 2026)</em></li>
-<li><a href="https://www.hotel-rheinstein.de/" target="_blank" rel="noopener">Hotel Rheinstein</a><span>Riverfront hotel on Rheinstraße, steps from the villa. Price guide: €€ (est.).</span></li>
-<li><a href="https://www.rheinhotel-ruedesheim.de/" target="_blank" rel="noopener">Rheinhotel Rüdesheim</a><span>4* hotel with rooftop pool and Rhine views, east end of town. Price guide: €€–€€€ (est.).</span><em>trivago 7.1/10 (as of Oct 2026)</em></li>
-<li><a href="https://www.jagdschloss-niederwald.de/" target="_blank" rel="noopener">Hotel Jagdschloss Niederwald</a><span>Former hunting lodge in the forest above town; quiet, scenic, needs car/taxi or chairlift+walk. Price guide: €€–€€€.</span><em>Tripadvisor 3.7/5 (~190) (as of Oct 2026)</em></li>
-<li><a href="https://www.hotel-krone.com/" target="_blank" rel="noopener">Hotel Krone Assmannshausen</a><span>Historic 1541 riverside hotel with pool in Assmannshausen; 1 train stop / boat from Rüdesheim. Price guide: €€–€€€.</span><em>Tripadvisor 3.4/5 (230) (as of Oct 2026)</em></li>
-<li><a href="https://www.nh-hotels.de/hotel/nh-bingen" target="_blank" rel="noopener">NH Bingen</a><span>Modern chain hotel on Bingen riverfront across the Rhine; good for larger blocks; ferry to Rüdesheim (last car ferry ~23:50). Price guide: €€ (est.).</span></li>
+<li><a href="https://www.ruedesheimer-schloss.com/" target="_blank" rel="noopener">Breuer's Rüdesheimer Schloss</a><span lang="en">4* family wine hotel in a 1729 building off the Drosselgasse; top-rated in town. Price guide: €€€ (~€170–260).</span><span lang="fi">Neljän tähden perheomisteinen viinihotelli vuonna 1729 rakennetussa talossa Drosselgassen kupeessa; kaupungin parhaiten arvioitu. Hintataso: €€€ (n. 170–260 €).</span><em>Tripadvisor 4.5/5 (452), #1/28 (10/2026)</em></li>
+<li><a href="https://www.hajos.de/hajos-hotel-germania/eng/index.html" target="_blank" rel="noopener">Hajo's Germania Lodge &amp; Irish Pub</a><span lang="en">12-room lodge above an Irish pub at Rheinstraße 10, a few doors from the villa; some rooms have river views. Fans in summer, no lift. Bookings by email (info@hajos.de) or phone (+49 6722 2584). Price guide: €€ (~€110–186 double, 2026 rates).</span><span lang="fi">12 huoneen majatalo irlantilaisen pubin yläkerrassa osoitteessa Rheinstraße 10, muutaman talon päässä huvilasta; osasta huoneista on näkymä joelle. Huoneissa on kesäisin tuuletin. Hissiä ei ole. Varaukset sähköpostitse (info@hajos.de) tai puhelimitse (+49 6722 2584). Hintataso: €€ (n. 110–186 € / kahden hengen huone, 2026 hinnat).</span></li>
+<li><a href="https://www.lindenwirt.com/" target="_blank" rel="noopener">Hotel Lindenwirt</a><span lang="en">Wine-tavern hotel (incl. wine-barrel rooms) on the Drosselgasse; lively. Price guide: €€ (~€100–150).</span><span lang="fi">Viinituvan yhteydessä toimiva hotelli Drosselgassella, myös viinitynnyreihin rakennettuja huoneita; vilkas ja eloisa. Hintataso: €€ (n. 100–150 €).</span><em>Tripadvisor 3.8/5 (293) (10/2026)</em></li>
+<li><a href="https://www.parkhotel-ruedesheim.de/" target="_blank" rel="noopener">Parkhotel Rüdesheim</a><span lang="en">Large riverside hotel on Rheinstraße, close to the villa. Price guide: €€ (~€100–160).</span><span lang="fi">Suuri jokirannan hotelli Rheinstraßella, lähellä huvilaa. Hintataso: €€ (n. 100–160 €).</span><em>Tripadvisor 3.3/5 (229) (10/2026)</em></li>
+<li><a href="https://www.hotel-rheinstein.de/" target="_blank" rel="noopener">Hotel Rheinstein</a><span lang="en">Riverfront hotel on Rheinstraße, steps from the villa. Price guide: €€ (est.).</span><span lang="fi">Jokirannan hotelli Rheinstraßella, vain muutaman askeleen päässä huvilasta. Hintataso: €€ (arvio).</span></li>
   </ul>
-<div class="cards">
-    <article><h3>Rüdesheim am Rhein</h3><p>Hotels, guesthouses and holiday apartments within walking distance of the venue and the riverfront. The easiest option for the evening.</p></article>
-    <article><h3>Bingen am Rhein</h3><p>Across the river. The car ferry runs until about midnight in summer, and there are left-bank trains to Mainz and Koblenz from Bingen Hbf.</p></article>
-    <article><h3>Rheingau villages</h3><p>Geisenheim, Oestrich-Winkel and Eltville are wine villages a short drive or train ride upriver.</p></article>
-    <article><h3>Wiesbaden / Mainz</h3><p>Cities about 35–45 minutes away with lots of hotels, good for combining the trip with sightseeing. You'll need transport to and from the venue.</p></article>
-  </div>
 </section>
 
 <section id="travel" class="wrap">
-  <h2>Travel Tips</h2>
+  <h2><span lang="en">Travel Tips</span><span lang="fi">Matkavinkit</span></h2>
   <div class="rule"></div>
   <div class="cards">
-    <article><h3>Entry &amp; documents</h3><p>Germany is in the Schengen Area. <strong>Finnish/EU citizens</strong> just need an ID card or passport. <strong>US citizens</strong> can usually visit visa-free for up to 90 days. Check whether the new EU <strong>ETIAS</strong> travel authorisation applies to your trip, and make sure your passport is valid for at least 3 months after you leave.</p></article>
-    <article><h3>Money</h3><p>The currency is the <strong>euro (€)</strong>. Cards are widely accepted, but small cafés, wine stands and taxis may want cash. Keep some euros on hand.</p></article>
-    <article><h3>Weather</h3><p>Late July is usually warm, typically 20–30 °C (68–86 °F), with long evenings. Pack sunscreen, and a light layer for the night on the river.</p></article>
-    <article><h3>Power</h3><p>Type <strong>C/F</strong> plugs, 230 V. US guests need an adapter, and check that your devices support 230 V. Finnish plugs work as-is.</p></article>
-    <article><h3>Language</h3><p>German is spoken, and English is widely understood in Rüdesheim's tourist areas.</p></article>
-    <article><h3>Things to do</h3><ul><li>Take the <strong>cable car</strong> over the vineyards to the <strong>Niederwald Monument</strong>. (The Assmannshausen chairlift is currently out of service.)</li><li>Stroll the <strong>Drosselgasse</strong> and sample Riesling at the Weinprobierstand.</li><li>Visit the <strong>Brömserburg</strong> wine museum next to the villa, or Siegfried's Mechanical Music Cabinet.</li><li>Take a <strong>Rhine cruise</strong> past the Mäuseturm, Burg Rheinstein and the Loreley.</li><li>Day trips: the Abbey of St. Hildegard and <strong>Kloster Eberbach</strong>.</li></ul><p><a href="#map">See them all on the map ↓</a></p></article>
+    <article><h3><span lang="en">Money &amp; cash</span><span lang="fi">Raha ja käteinen</span></h3><p lang="en">The currency is the <strong>euro (€)</strong>. Please note that <strong>many places don't accept cards</strong>, so bring enough cash with you.</p><p lang="fi">Valuuttana on <strong>euro (€)</strong>. Huomatkaa, että <strong>monissa paikoissa ei voi maksaa kortilla</strong>, joten varatkaa mukaan riittävästi käteistä.</p></article>
+    <article><h3><span lang="en">Weather</span><span lang="fi">Sää</span></h3><p lang="en">July in Germany can be <strong>extremely hot</strong>, sometimes well over 30 °C (86 °F). Please come prepared: light, breathable clothes, sunscreen, a hat and plenty of water. Many buildings and hotels have no air conditioning.</p><p lang="fi">Heinäkuussa Saksassa voi olla <strong>todella kuuma</strong>, joskus reilusti yli 30 astetta. Varautukaa helteeseen: kevyet ja hengittävät vaatteet, aurinkorasva, hattu ja runsaasti vettä. Monissa rakennuksissa ja hotelleissa ei ole ilmastointia.</p></article>
+    <article><h3><span lang="en">Entry &amp; documents</span><span lang="fi">Maahantulo ja matkustusasiakirjat</span></h3><p lang="en">Germany is in the Schengen Area. <strong>Finnish/EU citizens</strong> just need an ID card or passport. <strong>US citizens</strong> can usually visit visa-free for up to 90 days. Check whether the new EU <strong>ETIAS</strong> travel authorisation applies to your trip, and make sure your passport is valid for at least 3 months after you leave.</p><p lang="fi">Saksa kuuluu Schengen-alueeseen. <strong>Suomen ja muiden EU-maiden kansalaiset</strong> tarvitsevat vain henkilökortin tai passin. <strong>Yhdysvaltain kansalaiset</strong> voivat yleensä matkustaa ilman viisumia enintään 90 päivää. Tarkistakaa, koskeeko EU:n uusi <strong>ETIAS</strong>-matkustuslupa matkaanne, ja varmistakaa, että passi on voimassa vähintään kolme kuukautta paluun jälkeen.</p></article>
+    <article><h3><span lang="en">Power</span><span lang="fi">Sähkö</span></h3><p lang="en">Type <strong>C/F</strong> plugs, 230 V. US guests need an adapter, and check that your devices support 230 V. Finnish plugs work as-is.</p><p lang="fi">Pistorasiat ovat tyyppiä <strong>C/F</strong>, 230 V – suomalaiset pistokkeet sopivat sellaisenaan. Yhdysvalloista tulevat tarvitsevat adapterin, ja laitteiden on toimittava 230 voltin jännitteellä.</p></article>
+    <article><h3><span lang="en">Language</span><span lang="fi">Kieli</span></h3><p lang="en">German is spoken, and English is widely understood in Rüdesheim's tourist areas.</p><p lang="fi">Paikallinen kieli on saksa, mutta Rüdesheimin matkailualueilla pärjää hyvin myös englannilla.</p></article>
+    <article><h3><span lang="en">Things to do</span><span lang="fi">Tekemistä ja nähtävää</span></h3>
+      <ul lang="en"><li>Take the <strong>cable car</strong> over the vineyards to the <strong>Niederwald Monument</strong>. (The Assmannshausen chairlift is currently out of service.)</li><li>Stroll the <strong>Drosselgasse</strong> and sample Riesling at the Weinprobierstand.</li><li>Several local <strong>wineries</strong> organise tastings and other wine events.</li><li>Visit the <strong>Brömserburg</strong> wine museum next to the villa, or Siegfried's Mechanical Music Cabinet.</li><li>Take a <strong>Rhine cruise</strong> past the Mäuseturm, Burg Rheinstein and the Loreley.</li><li>Day trips: the Abbey of St. Hildegard and <strong>Kloster Eberbach</strong>.</li></ul>
+      <ul lang="fi"><li><strong>Köysiradalla</strong> viinitarhojen yli <strong>Niederwaldin muistomerkille</strong>. (Assmannshausenin tuolihissi on tällä hetkellä poissa käytöstä.)</li><li>Kävelyretki <strong>Drosselgassella</strong> ja rieslingin maistelua Weinprobierstandilla.</li><li>Useat paikalliset <strong>viinitilat</strong> järjestävät viininmaistajaisia ja muita viinitapahtumia.</li><li><strong>Brömserburgin</strong> viinimuseo aivan huvilan vieressä tai Siegfriedin mekaanisten soittimien museo (Siegfried's Mechanisches Musikkabinett).</li><li><strong>Risteily Reinillä</strong> Mäuseturmin, Burg Rheinsteinin ja Loreleyn ohi.</li><li>Päiväretkiä: Pyhän Hildegardin luostari ja <strong>Kloster Eberbach</strong>.</li></ul></article>
   </div>
 </section>
 
-<section id="map" class="wrap">
-  <h2>Map</h2>
-  <div class="rule"></div>
-  <p class="lead small">The venue, the ferry, where to stay and what to see, all in one place.</p>
-  <div class="chips" id="map-chips" role="group" aria-label="Filter map"></div>
-  <div class="map-frame"><div id="leaflet" aria-label="Interactive map"></div></div>
-  <p class="note">Tap a pin for details. Use the buttons to filter.</p>
-</section>
-
 <section id="faq" class="wrap alt">
-  <h2>FAQ</h2>
+  <h2><span lang="en">FAQ</span><span lang="fi">Usein kysyttyä</span></h2>
   <div class="rule"></div>
-  <details><summary>What is the dress code?</summary><p><span class="soon">Details coming soon</span>. Part of the day is on the river and a terrace, so comfortable shoes and a layer for the evening are a good idea.</p></details>
-  <details><summary>Are children welcome?</summary><p><span class="soon">Details coming soon</span></p></details>
-  <details><summary>Can I bring a plus-one?</summary><p>Please check the names on your formal invitation. <span class="soon">Details coming soon</span></p></details>
-  <details><summary>Do you have a gift registry?</summary><p>Your presence is the best gift. <span class="soon">Details coming soon</span></p></details>
-  <details><summary>When is the RSVP deadline?</summary><p>The deadline will come with the formal invitation. <span class="soon">Details coming soon</span></p></details>
-  <details><summary>I have dietary needs or allergies. What should I do?</summary><p>Dinner is an Italian buffet by L'Opera Hofheim (menu coming soon), and we'll ask about dietary needs and allergies on the RSVP form. <span class="soon">Details coming soon</span></p></details>
-  <details><summary>Can we take photos?</summary><p>Our photo policy and where to share pictures: <span class="soon">Details coming soon</span></p></details>
-  <details><summary>How will I get home after the party?</summary><p><span class="soon">Details coming soon</span>. We recommend staying in Rüdesheim if you can.</p></details>
+  <!-- Each question exists twice: lang="en" and lang="fi". -->
+  <details lang="en"><summary>What is the dress code?</summary><p>Think festive summer attire, light fabrics and festive colours. July can be extremely warm in Germany, so please dress comfortably and enjoy the summer evening with us.</p></details>
+  <details lang="fi"><summary>Millainen on pukukoodi?</summary><p>Toivomme kesäisen juhlavaa pukeutumista. Suosi kevyitä materiaaleja ja kesäisiä värejä. Heinäkuu voi olla Saksassa erittäin lämmin, joten pukeuduthan mukavasti kesäisestä juhlaillasta nauttien.</p></details>
+
+  <details lang="en"><summary>Are children welcome?</summary><p>Absolutely!</p></details>
+  <details lang="fi"><summary>Ovatko lapset tervetulleita?</summary><p>Ehdottomasti!</p></details>
+
+  <details lang="en"><summary>Can I bring a plus-one?</summary><p>Absolutely! Please see the <a href="#rsvp">RSVP form</a> below.</p></details>
+  <details lang="fi"><summary>Voinko tuoda avecin?</summary><p>Ehdottomasti! Ilmoittakaa avec alla olevalla <a href="#rsvp">ilmoittautumislomakkeella</a>.</p></details>
+
+  <details lang="en"><summary>Do you have a gift registry?</summary><p>No, your presence is the best gift. If you'd like, you can contribute to our honeymoon fund for Japan:</p>
+    <ul class="pay"><li><strong>In euros:</strong> Oona Karls, IBAN <span class="placeholder" data-fill="iban">[IBAN coming soon]</span>, or MobilePay <span data-fill="mobilepay">+358 45 8050000</span></li><li><strong>In dollars:</strong> Weston Karls, <span class="placeholder" data-fill="usd">[details coming soon]</span></li></ul></details>
+  <details lang="fi"><summary>Onko teillä lahjatoivelistaa?</summary><p>Ei ole – teidän läsnäolonne on meille paras lahja. Jos haluatte, voitte muistaa meitä osallistumalla Japanin-häämatkamme kassaan:</p>
+    <ul class="pay"><li><strong>Euroina:</strong> Oona Karls, IBAN <span class="placeholder" data-fill="iban">[IBAN tulossa pian]</span>, tai MobilePay <span data-fill="mobilepay">+358 45 8050000</span></li><li><strong>Dollareina:</strong> Weston Karls, <span class="placeholder" data-fill="usd">[tiedot tulossa pian]</span></li></ul></details>
+
+  <details lang="en"><summary>When should I RSVP?</summary><p>Please RSVP by <strong>24 May 2027</strong> by submitting the <a href="#rsvp">form</a> for yourself and your plus-one or family.</p></details>
+  <details lang="fi"><summary>Mihin mennessä pitää ilmoittautua?</summary><p>Ilmoittautukaathan viimeistään <strong>24.5.2027</strong> täyttämällä <a href="#rsvp">lomakkeen</a> itsestänne sekä avecistanne tai perheestänne.</p></details>
+
+  <details lang="en"><summary>I have dietary restrictions. What should I do?</summary><p>The menu will be a traditional Mediterranean buffet. Please note any dietary restrictions in the <a href="#rsvp">RSVP form</a>.</p></details>
+  <details lang="fi"><summary>Minulla on erityisruokavalio. Mitä teen?</summary><p>Tarjolla on perinteinen välimerellinen noutopöytä. Kertokaa mahdollisista erityisruokavalioista ja allergioista <a href="#rsvp">ilmoittautumislomakkeella</a>.</p></details>
+
+  <details lang="en"><summary>Can we take photos?</summary><p>Yes, please! We highly encourage you to take photos and share them with us.</p></details>
+  <details lang="fi"><summary>Saako juhlissa kuvata?</summary><p>Kyllä, kuvatkaa vapaasti! Toivomme, että otatte paljon kuvia ja jaatte ne myös meidän kanssamme.</p></details>
+
+  <div id="faq-home">
+  <details lang="en"><summary>How will I get home?</summary><p>Rüdesheim (Rhein) train station is about a 2-minute walk from the venue, and if you're staying in Rüdesheim, your hotel is likely within walking distance. The party goes on until 03:00, so please plan your late-night trip home in advance: check train times for that night, or book a taxi ahead of time rather than counting on finding one on the spot.</p></details>
+  <details lang="fi"><summary>Miten pääsen juhlista kotiin?</summary><p>Rüdesheimin rautatieasemalle on juhlapaikalta vain noin kahden minuutin kävelymatka, ja jos yövytte Rüdesheimissa, hotellinne on todennäköisesti kävelymatkan päässä. Juhlat jatkuvat kello kolmeen asti, joten suunnitelkaa yöllinen kotimatka etukäteen: tarkistakaa sen yön junayhteydet tai tilatkaa taksi hyvissä ajoin, ettei kyydin löytyminen jää paikan päällä sattuman varaan.</p></details>
+  </div>
+
+  <details lang="en"><summary>Is anything planned besides Saturday?</summary><p>If we plan any extra programme on Friday or Sunday, we'll post it here under <a href="#updates">Updates</a> and email everyone who has signed up.</p></details>
+  <details lang="fi"><summary>Onko ohjelmaa myös muina päivinä kuin lauantaina?</summary><p>Jos järjestämme lisäohjelmaa perjantaille tai sunnuntaille, kerromme siitä täällä <a href="#updates">Ajankohtaista</a>-osiossa sekä sähköpostitse kaikille ilmoittautuneille.</p></details>
 </section>
 
 <section id="updates" class="wrap">
-  <h2>Updates</h2>
+  <h2><span lang="en">Updates</span><span lang="fi">Ajankohtaista</span></h2>
   <div class="rule"></div>
-  <ul class="updates" id="updates-list"><li class="muted">Loading updates…</li></ul>
+  <ul class="updates" id="updates-list"><li class="muted"><span lang="en">Loading updates…</span><span lang="fi">Ladataan…</span></li></ul>
 </section>
 
 <section id="rsvp" class="wrap alt rsvp">
   <img class="fl fl-bl" src="img/floral-bl.webp?v=2" alt="" aria-hidden="true">
-  <h2>RSVP</h2>
+  <h2><span lang="en">RSVP</span><span lang="fi">Ilmoittautuminen</span></h2>
   <div class="rule"></div>
-  <p class="lead">RSVP opens with the formal invitation.</p>
-  <p>When it arrives, your invitation will include a personal RSVP link for your household.</p>
-  <p>Keep an eye on your inbox, and check back here.</p>
+  <p class="lead"><span lang="en">Please kindly let us know if you can join us by <strong>24 May 2027</strong>.</span><span lang="fi">Vahvistathan osallistumisesi viimeistään <strong>24.5.2027</strong>.</span></p>
+  <p><span lang="en">One form for you and your plus-one or family.</span><span lang="fi">Samalla lomakkeella voit ilmoittaa myös avecisi tai perheesi.</span></p>
+  <!-- Shown when RSVP_URL in main.js is empty -->
+  <p class="rsvp-soon"><span class="soon"><span lang="en">RSVP form coming soon</span><span lang="fi">Ilmoittautumislomake tulossa pian</span></span></p>
+  <!-- Shown when RSVP_URL is set -->
+  <p class="rsvp-open" hidden><a class="btn rsvp-link" href="#rsvp" target="_blank" rel="noopener"><span lang="en">Open the RSVP form</span><span lang="fi">Avaa ilmoittautumislomake</span></a></p>
 </section>
 </main>
 
 <div class="balustrade" aria-hidden="true"></div>
-<footer><p>Oona &amp; Wes · 24.07.2027 · Rüdesheim am Rhein</p></footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-<script src="main.js" defer></script>
-<script src="map.js" defer></script>
+<footer><p>Oona &amp; Wes · 24.7.2027 · Rüdesheim am Rhein</p></footer>
+<script src="main.js?v=3" defer></script>
 </body>
 </html>
