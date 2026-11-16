@@ -2,7 +2,7 @@
    SITE CONFIG — fill these in when the details are ready.
    Empty strings show a "coming soon" placeholder on the site.
    ========================================================================== */
-var RSVP_URL = '';        // Google Forms link, e.g. 'https://forms.gle/...'
+var RSVP_URL = 'https://forms.gle/JcXzVapjL1VgZuBfA';        // Google Forms link, e.g. 'https://forms.gle/...'
 var GIFT_IBAN = '';       // Oona Karls, euro account, e.g. 'FI00 0000 0000 0000 00'
 var GIFT_USD = '';        // Weston Karls, how to send dollars (e.g. 'Zelle: ...')
 /* ======================================================================== */
@@ -13,7 +13,7 @@ var GIFT_USD = '';        // Weston Karls, how to send dollars (e.g. 'Zelle: ...
     en:{title:'Oona & Wes · 24 July 2027 · Rüdesheim am Rhein',
         desc:'Wedding celebration of Oona & Wes, Saturday 24 July 2027, VILLArue 1891, Rüdesheim am Rhein, Germany.'},
     fi:{title:'Oona & Wes · 24.7.2027 · Rüdesheim am Rhein',
-        desc:'Oonan ja Wesin hääjuhla lauantaina 24.7.2027 VILLArue 1891 -huvilassa Rüdesheim am Rheinissa, Saksassa.'}
+        desc:'Oona ja Wes juhlivat häitään lauantaina 24.7.2027 Rüdesheim am Rheinissa Reininlaaksossa. Täältä löydätte aikataulun, majoitusvinkit ja ilmoittautumisen.'}
   };
   function setLang(l,save){
     l=(l==='fi')?'fi':'en';
@@ -41,7 +41,7 @@ var GIFT_USD = '';        // Weston Karls, how to send dollars (e.g. 'Zelle: ...
     document.querySelectorAll('.rsvp-link').forEach(function(a){a.href=RSVP_URL});
     document.querySelectorAll('.rsvp-open').forEach(function(e){e.hidden=false});
     document.querySelectorAll('.rsvp-soon').forEach(function(e){e.hidden=true});
-  }
+  }else{document.querySelectorAll('.rsvp-link').forEach(function(x){x.removeAttribute('target')})}
 })();
 
 // Countdown to 24 July 2027, 14:00 Berlin time (CEST, UTC+2)
@@ -84,5 +84,5 @@ document.addEventListener('click',function(e){
   }
   document.addEventListener('langchange',render);
   fetch('updates.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){items=d;render()})
-  .catch(function(){ul.innerHTML='<li class="muted"><span lang="en">Updates could not be loaded.</span><span lang="fi">Päivityksiä ei voitu ladata.</span></li>'});
+  .catch(function(){ul.innerHTML='<li class="muted"><span lang="en">Updates could not be loaded.</span><span lang="fi">Uutisia ei saatu ladattua.</span></li>'});
 })();
